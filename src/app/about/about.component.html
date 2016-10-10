@@ -1,0 +1,6 @@
+<h2>About Page</h2>
+<paper-button raised class="custom indigo" (click)="getApiData()">Get Data from API</paper-button>
+<div *ngFor="let post of apiData">
+<h3>{{post.title}}</h3>
+  <p >{{post.body}}</p>
+</div>
