@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import {RouterModule} from '@angular/router';
-import { ROUTES } from './app.routes';
+import { ROUTES } from '../assets/app.routes';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -19,9 +19,14 @@ import { HomeComponent } from './home/home.component';
     PolymerElement('app-header-layout'),
     PolymerElement('app-header'),
     PolymerElement('paper-icon-button'),
+    PolymerElement('paper-menu'),
+    PolymerElement('paper-item'),
+    PolymerElement('paper-menu-button'),
     PolymerElement('app-toolbar'),
     PolymerElement('paper-input'),
     PolymerElement('paper-button'),
+    PolymerElement('paper-toolbar'),
+    PolymerElement('paper-spinner'),
     AboutComponent,
     HomeComponent
   ],

@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   testClick(event){
     let self = this;
     console.log(self.testData);
+    alert("testData is now: "+this.testData);
     // console.log(event);
   }
 

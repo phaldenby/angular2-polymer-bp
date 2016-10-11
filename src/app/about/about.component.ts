@@ -9,12 +9,17 @@ import { ApiService } from './../services/api.service.ts';
 })
 export class AboutComponent implements OnInit {
 
+  isSpinning = false;
   apiData = "";
-  getApiData(){
 
-    let apiData = this.apiService.getTest().then( result => {
-      console.log(result);
+  getApiData(){
+    let self = this;
+
+    self.isSpinning = true;
+
+    this.apiService.getTest().then( result => {
       this.apiData = result;
+      this.isSpinning = false;
     })
   }
 

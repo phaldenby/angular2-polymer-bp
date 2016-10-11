@@ -14,7 +14,6 @@ export class ApiService {
     let options = new RequestOptions({ headers: headers });
     return this.http.get(this.serviceUrl+"posts",options)
       .toPromise()
-      // .then(result => {console.log("got some results",result)});
       .then(this.extractData)
       .catch(this.handleError);
   }
@@ -30,7 +29,7 @@ export class ApiService {
 
   private extractData(res: Response) {
     let body = res.json();
-    console.log("body", body);
+    // console.log("body", body);
     if (body.error){
       return body.error;
     } else {
