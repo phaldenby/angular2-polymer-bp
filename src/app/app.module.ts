@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import {RouterModule} from '@angular/router';
-import { ROUTES } from '../assets/app.routes';
+import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -34,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: false }),
+    // RouterModule.forRoot(ROUTES, { useHash: false }),
+    RouterModule.forRoot(ROUTES),
   ],
   providers: [],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

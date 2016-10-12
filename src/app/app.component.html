@@ -3,8 +3,8 @@
   <paper-menu-button>
     <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
     <paper-menu class="dropdown-content">
-      <a href = "/" style="text-decoration: none;"><paper-item>Home</paper-item></a>
-      <a href = "/about" style="text-decoration: none;"><paper-item>About (API)</paper-item></a>
+      <paper-item  [routerLink]=" ['./'] ">Home</paper-item>
+      <paper-item  [routerLink]=" ['./about'] ">about</paper-item>
     </paper-menu>
   </paper-menu-button>
   <div class="title">Angular2 + Polymer + Router + API Service Provider: BoilerPlate App</div>
